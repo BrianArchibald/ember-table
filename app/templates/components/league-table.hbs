@@ -1,1 +1,31 @@
-[League Table]
+<table class="w-full">
+  <thead>
+    <th>Team</th>
+    <th>Played</th>
+    <th>Won</th>
+    <th>Drawn</th>
+    <th>Lost</th>
+    <th>For</th>
+    <th>Against</th>
+    <th>GD</th>
+    <th>Points</th>
+    <th>Form</th>
+  </thead>
+  {{#each @teams of |team index|}}
+  <tr>
+    <td>{{add 1 index}}</td>
+    <td>{{team.name}}</td>
+    <td>{{team.games.length}}</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  {{/each}}
+</table>
